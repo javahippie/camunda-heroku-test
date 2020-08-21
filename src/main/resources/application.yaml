@@ -9,3 +9,11 @@ camunda:
     job-execution:
       core-pool-size: 10
     authorization.enabled: true
+    webapp:
+        csrf: 
+            target-origin: https://herokumunda.herokuapp.com/
+            enable-secure-cookie: true
+            enable-same-site-cookie: true
+            same-site-cookie-option: strict
+        
+        
