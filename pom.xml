@@ -7,7 +7,7 @@
   <version>0.0.1-SNAPSHOT</version>
 
   <properties>
-    <camunda.version>7.13.0-ee</camunda.version>
+    <camunda.version>7.13.0</camunda.version>
     <spring.boot.version>2.2.5.RELEASE</spring.boot.version>
   </properties>
 
@@ -33,7 +33,7 @@
   <dependencies>
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
-      <artifactId>camunda-bpm-spring-boot-starter-webapp-ee</artifactId>
+      <artifactId>camunda-bpm-spring-boot-starter-webapp</artifactId>
     </dependency>
     <dependency>
       <groupId>org.camunda.bpm.springboot</groupId>
@@ -43,36 +43,12 @@
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-jdbc</artifactId>
     </dependency>
-
+    
     <!-- JDBC DRIVERS -->
     <dependency>
-      <groupId>com.h2database</groupId>
-      <artifactId>h2</artifactId>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
     </dependency>
-<!--    <dependency>-->
-<!--      <groupId>org.postgresql</groupId>-->
-<!--      <artifactId>postgresql</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>com.oracle.ojdbc</groupId>-->
-<!--      <artifactId>ojdbc8</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>com.ibm.db2.jcc</groupId>-->
-<!--      <artifactId>db2-spring-boot-starter</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>mysql</groupId>-->
-<!--      <artifactId>mysql-connector-java</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>org.mariadb.jdbc</groupId>-->
-<!--      <artifactId>mariadb-java-client</artifactId>-->
-<!--    </dependency>-->
-<!--    <dependency>-->
-<!--      <groupId>com.microsoft.sqlserver</groupId>-->
-<!--      <artifactId>mssql-jdbc</artifactId>-->
-<!--    </dependency>-->
 
     <dependency>
       <groupId>com.sun.xml.bind</groupId>
